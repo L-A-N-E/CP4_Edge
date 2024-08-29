@@ -3,7 +3,7 @@
 
 // Configurações - variáveis editáveis
 const char* default_SSID = "SUA_INTERNET"; // Nome da rede Wi-Fi 
-const char* default_PASSWORD = "SENHA_DA_SUA_INTERNET"; // Senha da rede Wi-Fi // Challange@24! ou senha do Wifi de Casa
+const char* default_PASSWORD = "SENHA_DA_SUA_INTERNET"; // Senha da rede Wi-Fi 
 const char* default_BROKER_MQTT = "IP_PÚBLICO"; // IP do Broker MQTT 
 const int default_BROKER_PORT = 1883; // Porta do Broker MQTT
 const char* default_TOPICO_SUBSCRIBE = "/TEF/lamp002/cmd"; // Tópico MQTT de escuta
