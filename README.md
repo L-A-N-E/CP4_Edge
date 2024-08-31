@@ -7,10 +7,7 @@
 
   * [Descrição do Projeto](#descrição-do-projeto-memo)
      * [Introdução](#introdução-left_speech_bubble)
-     * [Inicialização](#inicialização-star2)
-     * [Luminosidade](#luminosidade-bulb)
-     * [Temperatura](#temperatura-thermometer)
-     * [Umidade](#umidade-droplet)
+     * [ESP32](#esp32-pager)
   * [Acesso ao projeto](#acesso-ao-projeto-file_folder)
   * [Ferramenta utilizada](#ferramenta-utilizada-hammer_and_wrench)
   * [Bibliotecas utilizadas](#bibliotecas-utilizadas-books)
@@ -79,8 +76,16 @@ Você pode acessar o [código do projeto](CP4.ino) ou a [simulação feita no Wo
 ## Reprodução :gear:
 
 - ``1.`` Após a montagem do projeto, é necessário inserir o código por meio de um computador que possui o programa Arduino IDE instalado;
-- ``2.`` Baixe as [bibliotecas necessárias](#bibliotecas-utilizadas-books) no Arduino IDE;
-- ``3.`` Faça as devidas modificações no código disponível:
+- ``2.``Ao abrir a IDE, é necessário fazer algumas coisas para selecionar o ESP32:
+  - ``2.1.`` Clique em **Arquivo** > **Preferências**.
+    - ``2.1.1.`` No campo **URLs Adicionais para Gerenciadores de Placas**, adicione o seguinte link: *https://dl.espressif.com/dl/package_esp32_index.json*;
+  - ``2.2.`` Clique em **Ferramentas** > **Placas** > **Gerenciar Placas**.
+    - ``2.2.1.`` Na janela que se abre, digite *ESP32* na caixa de pesquisa;
+    - ``2.2.2.`` Selecione a plataforma *esp32* da lista e clique em Instalar;
+  - ``2.3.`` Após a instalação, vá novamente em **Ferramentas** > **Placas**.
+    - ``2.3.1.`` Você verá uma nova opção para selecionar as placas ESP32. Escolha a placa específica que você está usando;
+- ``3.`` Baixe as [bibliotecas necessárias](#bibliotecas-utilizadas-books) no Arduino IDE;
+- ``4.`` Faça as devidas modificações no código disponível:
   
   ```cpp
     const char* default_SSID = "SUA_INTERNET"; // Nome da rede Wi-Fi 
@@ -88,13 +93,13 @@ Você pode acessar o [código do projeto](CP4.ino) ou a [simulação feita no Wo
     const char* default_BROKER_MQTT = "IP_PÚBLICO"; // IP do Broker MQTT 
   ```
 
-  - ``3.1.`` Substitua a "SUA_INTERNET" pelo nome de sua internet;
-  - ``3.2.`` Substitua a "SENHA_DA_SUA_INTERNET" pela senha de sua internet;
-  - ``3.3.`` Substitua o "IP_PÚBLICO" pelo ip do servidor do Cloud Service de sua preferência:
-    - ``3.3.1.`` Não disponibilizamos o IP por motivos de segurança. Para testar este código, você precisará de um serviço de nuvem, como Azure ou AWS. Além disso, será necessário instalar o FIWARE e o Docker nesse serviço e, por fim, abrir as portas necessárias. 
-- ``4.`` Transferir o código do computador para  o ESP32 por meio do Cabo USB;
-- ``5.`` Teste o sistema para verificar se ele está recebendo instruções e enviando dados via Postman;
-- ``6.`` Com tudo montado e pronto, é necessário levá-lo para o ambiente em que será implementado e ligá-lo á uma fonte;
+  - ``4.1.`` Substitua a "SUA_INTERNET" pelo nome de sua internet;
+  - ``4.2.`` Substitua a "SENHA_DA_SUA_INTERNET" pela senha de sua internet;
+  - ``4.3.`` Substitua o "IP_PÚBLICO" pelo ip do servidor do Cloud Service de sua preferência:
+    - ``4.3.1.`` Não disponibilizamos o IP por motivos de segurança. Para testar este código, você precisará de um serviço de nuvem, como Azure ou AWS. Além disso, será necessário instalar o FIWARE e o Docker nesse serviço e, por fim, abrir as portas necessárias. 
+- ``5.`` Transferir o código do computador para  o ESP32 por meio do Cabo USB;
+- ``6.`` Teste o sistema para verificar se ele está recebendo instruções e enviando dados via Postman;
+- ``7.`` Com tudo montado e pronto, é necessário levá-lo para o ambiente em que será implementado e ligá-lo á uma fonte;
 
 ## Pessoas Desenvolvedoras do Projeto :globe_with_meridians:
 
