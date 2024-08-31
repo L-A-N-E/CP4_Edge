@@ -6,13 +6,13 @@ const char* default_SSID = "SUA_INTERNET"; // Nome da rede Wi-Fi
 const char* default_PASSWORD = "SENHA_DA_SUA_INTERNET"; // Senha da rede Wi-Fi 
 const char* default_BROKER_MQTT = "IP_PÚBLICO"; // IP do Broker MQTT 
 const int default_BROKER_PORT = 1883; // Porta do Broker MQTT
-const char* default_TOPICO_SUBSCRIBE = "/TEF/lamp002/cmd"; // Tópico MQTT de escuta
-const char* default_TOPICO_PUBLISH_1 = "/TEF/lamp002/attrs"; // Tópico MQTT de envio de informações para Broker
-const char* default_TOPICO_PUBLISH_2 = "/TEF/lamp002/attrs/l"; // Tópico MQTT de envio de informações para Broker
-const char* default_ID_MQTT = "fiware_002"; // ID MQTT 
+const char* default_TOPICO_SUBSCRIBE = "/TEF/lamp027/cmd"; // Tópico MQTT de escuta
+const char* default_TOPICO_PUBLISH_1 = "/TEF/lamp027/attrs"; // Tópico MQTT de envio de informações para Broker
+const char* default_TOPICO_PUBLISH_2 = "/TEF/lamp027/attrs/l"; // Tópico MQTT de envio de informações para Broker
+const char* default_ID_MQTT = "fiware_027"; // ID MQTT 
 const int default_D4 = 2; // Pino do LED onboard
 // Declaração da variável para o prefixo do tópico 
-const char* topicPrefix = "lamp002";
+const char* topicPrefix = "lamp027";
 
 // Variáveis para configurações editáveis
 char* SSID = const_cast<char*>(default_SSID);
