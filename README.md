@@ -73,7 +73,7 @@ Você pode acessar o [código do projeto](CP4.ino) ou a [simulação feita no Wo
 
 - ``2.`` Conectando o LDR:
   - ``2.1.`` Nesta segunda parte, mudamos o LDR para um Módulo LDR com 4 terminais no qual possui a opção da saída dos dados analógicos ou digitais. Com isso, nesse projeto, continuamos usando a entrada analógica. Então, verifique se o cabo que está conectado ao D34 do ESP32 está  conectado ao A0 do LDR.
-  - ``2.2.`` Conecte o VCC no terminal positivo (3.3V) e o GND no terminal negativo (GND);
+  - ``2.2.`` Conecte o VCC no terminal positivo (3V3) e o GND no terminal negativo (GND);
   - ``2.3.`` Relaxe, um dos terminais do LDR ficará sem conectar, pois esse é onde sai os dados digitais;
 
 ## Reprodução :gear:
