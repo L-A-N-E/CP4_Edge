@@ -53,7 +53,7 @@ Você pode acessar o [código do projeto](CP4.ino) ou a [simulação feita no Wo
 |:--------------:|:----------:|
 | ESP32  |      1     |
 | Módulo LDR - 4 terminais |      1     |
-|      Cabo      |     3     |
+|      Jumper     |     3     |
 |    Cabo USB    |      1     |
 
 ## Montagem :wrench:
@@ -100,6 +100,8 @@ Você pode acessar o [código do projeto](CP4.ino) ou a [simulação feita no Wo
 - ``5.`` Transferir o código do computador para  o ESP32 por meio do Cabo USB;
 - ``6.`` Teste o sistema para verificar se ele está recebendo instruções e enviando dados via Postman;
 - ``7.`` Com tudo montado e pronto, é necessário levá-lo para o ambiente em que será implementado e ligá-lo á uma fonte;
+
+<p align='center'><i>OBS: Se o ESP32 for uma versão mais antiga, pode ser necessário pressionar o botão BOOT na placa durante a transferência do código </i></p>
 
 ## Pessoas Desenvolvedoras do Projeto :globe_with_meridians:
 
